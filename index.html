@@ -53,10 +53,13 @@ img {
     opacity: 0;
     transition: opacity 0.3s;
 
-    position: absolute;
-    bottom: 125%;
+    position: fixed; /* centrato nella pagina */
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+
+    z-index: 9999;
+    width: 320px;
 
     background-color: #111;
     color: #fff;
@@ -99,22 +102,20 @@ img {
 <!-- CITAZIONE -->
 <p class="center">
 
-
-
-    <span class="tooltip">
+    <span class="tooltip" style="display: inline-block;">
         «Sell your cleverness and buy bewilderment.<br>
-        Cleverness is mere opinion, bewilderment intuition.»<br>
+        Cleverness is mere opinion, bewilderment intuition.»
         
         <span class="tooltip-text">
             «Abbandona l’astuzia per abbracciare lo stupore: la prima è semplice opinione, il secondo è intuizione.»
         </span>
     </span>
 
+    <br>
 
+    — <a href="https://en.wikiquote.org/wiki/Rumi">Jalāl al-Dīn Rūmī</a><br>
+    (II storia, Libro IV, Mathnawi - tr. Whinfield)
 
-
-— <a href="https://en.wikiquote.org/wiki/Rumi">Jalāl al-Dīn Rūmī</a><br>
-(II storia, Libro IV, Mathnawi - tr. Whinfield)
 </p>
 
 <div class="page-break"></div>
