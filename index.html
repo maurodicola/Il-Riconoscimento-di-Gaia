@@ -38,18 +38,40 @@ p {
     text-align: center;
 }
 
-
-
-
-
 img {
             max-width: 100%;
             height: auto;
         }
 
+.tooltip {
+    position: relative;
+    cursor: help;
+}
 
+.tooltip .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
 
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
 
+    background-color: #111;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 6px;
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
 
 </style>
 </head>
@@ -76,8 +98,21 @@ img {
 
 <!-- CITAZIONE -->
 <p class="center">
-«Sell your cleverness and buy bewilderment.<br>
-Cleverness is mere opinion, bewilderment intuition.»<br>
+
+
+
+    <span class="tooltip">
+        «Sell your cleverness and buy bewilderment.<br>
+        Cleverness is mere opinion, bewilderment intuition.»<br>
+        
+        <span class="tooltip-text">
+            «Abbandona l’astuzia per abbracciare lo stupore: la prima è semplice opinione, il secondo è intuizione.»
+        </span>
+    </span>
+
+
+
+
 — <a href="https://en.wikiquote.org/wiki/Rumi">Jalāl al-Dīn Rūmī</a><br>
 (II storia, Libro IV, Mathnawi - tr. Whinfield)
 </p>
